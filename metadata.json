@@ -1,0 +1,6 @@
+{
+  "name": "Ո՞վ է ուզում դառնալ միլիոնատեր — Իսպաներեն",
+  "description": "Իսպաներենի ուսուցողական խաղ «Ո՞վ է ուզում դառնալ միլիոնատեր» ոճով՝ հայերեն թարգմանություններով և 50 հարցերով:",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

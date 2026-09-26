@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+:root {
+  font-family: 'Outfit', 'Noto Sans Armenian', system-ui, -apple-system, sans-serif;
+  color-scheme: dark;
+}
+
+/* Authentic Millionaire Hexagonal Lozenge buttons */
+.lozenge-shape {
+  clip-path: polygon(18px 0%, calc(100% - 18px) 0%, 100% 50%, calc(100% - 18px) 100%, 18px 100%, 0% 50%);
+}
+
+.lozenge-shape-sm {
+  clip-path: polygon(12px 0%, calc(100% - 12px) 0%, 100% 50%, calc(100% - 12px) 100%, 12px 100%, 0% 50%);
+}
+
+/* Gold studio accents */
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+.font-armenian {
+  font-family: 'Noto Sans Armenian', 'Outfit', sans-serif;
+}
+
+/* Studio stage lighting background */
+.studio-bg {
+  background: radial-gradient(circle at 50% 40%, #0d2163 0%, #050d2c 50%, #020412 100%);
+}
+
+.gold-glow {
+  text-shadow: 0 0 12px rgba(251, 191, 36, 0.7);
+}
+
+.cyan-glow {
+  text-shadow: 0 0 10px rgba(56, 189, 248, 0.8);
+}
+
+/* Flashing final answer animation */
+@keyframes millionairePulseOrange {
+  0%, 100% {
+    background-color: #d97706;
+    border-color: #fef08a;
+    box-shadow: 0 0 25px rgba(245, 158, 11, 0.8);
+  }
+  50% {
+    background-color: #92400e;
+    border-color: #f59e0b;
+    box-shadow: 0 0 10px rgba(245, 158, 11, 0.4);
+  }
+}
+
+.animate-final-answer {
+  animation: millionairePulseOrange 0.8s ease-in-out infinite;
+}
+
+/* Flashing correct answer animation */
+@keyframes millionairePulseGreen {
+  0%, 100% {
+    background-color: #15803d;
+    border-color: #86efac;
+    box-shadow: 0 0 30px rgba(34, 197, 94, 0.9);
+  }
+  50% {
+    background-color: #166534;
+    border-color: #22c55e;
+    box-shadow: 0 0 12px rgba(34, 197, 94, 0.4);
+  }
+}
+
+.animate-correct-answer {
+  animation: millionairePulseGreen 0.7s ease-in-out infinite;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #020719;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e3a8a;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3b82f6;
+}
